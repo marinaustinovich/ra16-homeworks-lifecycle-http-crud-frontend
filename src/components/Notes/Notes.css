@@ -1,0 +1,47 @@
+.notes-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    margin: auto;
+}
+
+.notes-update {
+    display: flex;
+    width: 100%;
+    align-items: center; 
+}
+
+.notes-title {
+    width: 100px;
+    margin-right: 2rem;
+}
+
+.refresh-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(27, 235, 27);
+    width: 40px;
+    height: 40px;
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 50%;
+    font-size: 16px;
+}
+
+.refresh-icon {
+    display: flex;
+    align-items: center;
+}
+
+.notes-group {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 150px;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: rgb(239 239 239);
+    border: 1px solid black;
+}
