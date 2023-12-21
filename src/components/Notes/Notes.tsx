@@ -32,7 +32,7 @@ export default class Notes extends Component<NotesProps, NotesState> {
     }
 
     try {
-      const response = await fetch(apiUrl);
+      const response = await fetch(`${apiUrl}/notes`);
       if (!response.ok) {
         throw new Error("HTTP Error " + response.status);
       }
@@ -50,7 +50,7 @@ export default class Notes extends Component<NotesProps, NotesState> {
     }
 
     try {
-      const response = await fetch(apiUrl, {
+      const response = await fetch(`${apiUrl}/notes`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -67,8 +67,13 @@ export default class Notes extends Component<NotesProps, NotesState> {
   };
 
   removeNote = async (id: string) => {
+    if (!apiUrl) {
+      console.error("REACT_APP_NOTES_URL is not defined");
+      return;
+    }
+
     try {
-      const response = await fetch(`${process.env.REACT_APP_NOTES_URL}/${id}`, {
+      const response = await fetch(`${apiUrl}/notes/${id}`, {
         method: "DELETE",
       });
       if (!response.ok) {
@@ -89,7 +94,7 @@ export default class Notes extends Component<NotesProps, NotesState> {
     const { id } = this.props;
 
     if (isLoading) {
-      return 'Loading';
+      return "Loading";
     }
 
     if (isLoading) {

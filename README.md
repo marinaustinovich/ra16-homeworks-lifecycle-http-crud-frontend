@@ -1,4 +1,4 @@
-deployment: https://marinaustinovich.github.io/ra16-homeworks-lifecycle-http-crud/
+deployment: https://crud-front-kldn.onrender.com
 
 CRUD
 ===
