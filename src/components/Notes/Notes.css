@@ -27,6 +27,11 @@
     border: 1px solid black;
     border-radius: 50%;
     font-size: 16px;
+    transition: transform 0.2s;
+}
+
+.refresh-button:hover {
+    transform: scale(1.2);
 }
 
 .refresh-icon {

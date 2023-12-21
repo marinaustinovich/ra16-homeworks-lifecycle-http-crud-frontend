@@ -1,10 +1,5 @@
-import './App.css';
-import Notes from './components/Notes/Notes';
+import Notes from "./components/Notes/Notes";
 
-function App() {
-  return (
-    <Notes></Notes>
-  );
-}
+const App = () => <Notes />;
 
 export default App;

@@ -1,23 +1,28 @@
 .note-item {
-    position: relative;
-    width: 25%;
-    min-height: 100px;
-    margin-bottom: 1rem;
-    margin-right: 1rem;
-    padding: 0.5rem;
-    border: 1px solid black;
-    border-radius: 10px;
-    background-color: white;
+  position: relative;
+  width: 25%;
+  min-height: 100px;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+  padding: 0.5rem;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: white;
 }
 
 .remove-button {
-    position: absolute;
-    top: -15px;
-    right: -10px;
-    color: red;
-    background-color: white;
-    border-radius: 50%;
-    border: 1px solid black;
-    width: 25px;
-    height: 25px;
+  position: absolute;
+  top: -15px;
+  right: -10px;
+  color: red;
+  background-color: white;
+  border-radius: 50%;
+  border: 1px solid black;
+  width: 25px;
+  height: 25px;
+  transition: transform 0.2s;
+}
+
+.remove-button:hover {
+    transform: scale(1.2);
 }
